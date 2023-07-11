@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Authentication"
+    android:background="@color/bg_color"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:text="Password Genie"
+        android:textColor="@color/text_color"
+        android:textSize="40sp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter 4 digit security passcode"
+        android:textColor="@color/text_light"
+        android:layout_above="@id/llPassEdittext"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/llPassEdittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+            <EditText
+                android:id="@+id/etPass1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:textSize="30sp"
+                android:textColor="@color/blue_500"
+                android:background="@drawable/edittext_bg"/>
+
+
+            <EditText
+                android:id="@+id/etPass2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:textSize="30sp"
+                android:textColor="@color/blue_500"
+                android:background="@drawable/edittext_bg"/>
+
+            <EditText
+                android:id="@+id/etPass3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:textSize="30sp"
+                android:textColor="@color/blue_500"
+                android:background="@drawable/edittext_bg"/>
+
+            <EditText
+                android:id="@+id/etPass4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:textSize="30sp"
+                android:textColor="@color/blue_500"
+                android:background="@drawable/edittext_bg"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>

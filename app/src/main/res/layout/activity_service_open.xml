@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.ServiceOpen"
+    android:background="@color/bg_color">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/ic_arrow_left"
+        app:tint="@color/blue_500"
+        android:background="@drawable/service_display_bg"
+        app:cornerRadius="10dp"
+        android:elevation="5dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvServiceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amazon"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lato_bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:layout_below="@id/btnBack"
+        android:layout_above="@id/btnDelete">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivServiceImage"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/ic_amazon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp" />
+
+
+            <LinearLayout
+                android:id="@+id/llUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/ivServiceImage"
+                android:layout_marginTop="60dp"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_person"
+                    android:layout_gravity="center"
+                    app:tint="@color/blue_200" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Username"
+                        android:textSize="20sp"
+                        android:textColor="@color/text_color"
+                        android:fontFamily="@font/lato_regular"/>
+
+                    <TextView
+                        android:id="@+id/tvServiceUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="test"
+                        android:textSize="18sp"
+                        android:textColor="@color/text_light"
+                        android:fontFamily="@font/lato_regular"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llUsername"
+                android:padding="16dp"
+                android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/ivKey"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_key"
+                android:layout_gravity="center"
+                app:tint="@color/blue_200"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/ivKey"
+                android:layout_toStartOf="@id/ivClipboard">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textSize="20sp"
+                    android:textColor="@color/text_color"
+                    android:fontFamily="@font/lato_regular"/>
+
+                <TextView
+                    android:id="@+id/tvServicePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="123456789"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_light"
+                    android:fontFamily="@font/lato_regular"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivClipboard"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_copy"
+                app:tint="@color/blue_200"
+                android:layout_gravity="center"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/btnEdit"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/ic_edit"
+        app:tint="@color/blue_500"
+        android:background="@drawable/service_display_bg"
+        app:cornerRadius="10dp"
+        android:elevation="5dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"/>
+
+
+    <ImageView
+        android:id="@+id/btnDelete"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/ic_delete"
+        app:tint="@color/blue_500"
+        android:background="@drawable/service_display_bg"
+        app:cornerRadius="10dp"
+        android:elevation="5dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

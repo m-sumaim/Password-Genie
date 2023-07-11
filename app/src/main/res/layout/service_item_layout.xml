@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlService"
+    android:background="@drawable/service_display_bg"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:layout_marginBottom="16dp"
+    android:backgroundTint="@color/bg_light"
+    app:elevation="5dp">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/newlogo"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facebook"
+        android:textSize="22sp"
+        android:textColor="@color/text_color"
+        android:fontFamily="@font/lato_regular"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/ivImage"
+        android:layout_toStartOf="@id/ivArrow"
+        android:layout_marginStart="16dp"/>
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_arrow_right"
+        app:tint="@color/blue_500"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>
